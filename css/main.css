@@ -1,0 +1,35 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.container{
+    display:grid;
+    grid-template-rows:80vh repeat(5,max-content);
+    grid-template-columns: repeat(6,1fr);
+}
+.section-title{
+    color: orange;
+    padding: 25px;
+    font-size: 27px;
+    text-align: center;
+}
+.section-title:before,
+.section-title:after{
+    background-color: black;
+    content:" ";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 8%;
+}
+.section-title:before{
+    right: 0.5rem;
+}
+.section-title:after{
+    left: 0.5rem;
+}
